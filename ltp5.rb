@@ -1,27 +1,19 @@
-# hours in a year
+# full name greeting
 
-hours = 365 * 24
+puts "What is your first name?"
+first = gets.chomp.downcase.capitalize
 
-hoursLeap = 366 * 24
+puts "What is your middle name?"
+middle = gets.chomp.downcase.capitalize
 
-puts "There are #{hours} hours in a regular year, and #{hoursLeap} hours in a leap year."
+puts "What is your last name?"
+last = gets.chomp.downcase.capitalize
 
-# minutes in a decade
-mins2leap = ((10 * 365) + 2) * 24 * 60
-
-mins3leap = ((10 * 365) + 3) * 24 * 60
-
-puts "There are #{mins2leap} minutes in a decade with two leap years, while there are #{mins3leap} minutes in a decade with three leap years."
+puts "Hi #{first} #{middle} #{last}. You have a great name!"
 
 
-# my age in seconds (including leap years and leap seconds)
+# bigger, better, favorite number
 
-secs = (((365 * 43) + 138 + 11) * 24 * 60 * 60) + 25
-
-puts "I am #{secs} seconds old (including leap years and leap seconds)."
-
-# author's age
-
-author = 1160000000 / (365 * 24 * 60 * 60)
-
-puts "Pine is #{author} years old."
+puts "What is your favorite number?"
+fav = gets.chomp.to_i
+puts "While #{fav} is a great number, some folks suggest #{fav + 1} as a bigger and better favorite number."
